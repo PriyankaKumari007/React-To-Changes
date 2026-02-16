@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+.logo img{
+    width:150px;
+}
+
+
+
+.nav > ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.res-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 200px;
+    padding: 10px;
+}
+
+.res-card img{
+    width: 200px;
+}
+
+.serach{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 10px;
+}
