@@ -4,7 +4,7 @@ export const resList = [
             "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
             "info": {
               "id": "340645",
-              "name": "RNR Biryani - Taste of 1953",
+              "name": "RNReeeeeeeeeeeeeeee Biryani - Taste of 1953",
               "cloudinaryImageId": "jhdven0c7dkmypffoigf",
               "locality": "4th B Block",
               "areaName": "Koramangala",
