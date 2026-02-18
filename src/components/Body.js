@@ -31,16 +31,16 @@ if(listOfRestaurants.length === 0){  //conditional rendering
 
   return (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="filter flex">
+        <div className="search m-4 b-4 border-amber-600">
           <input
             type="text"
-            className="search-box"
+            className="search-box bg-gray-200 p-2 m-2"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
           />
           <button
-            className="search-btn"
+            className="search-btn bg-blue-500 text-white p-2 m-2 rounded"
             onClick={() => {
               const filteredList = listOfRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchInput.toLowerCase())
@@ -52,7 +52,7 @@ if(listOfRestaurants.length === 0){  //conditional rendering
           </button>
           </div>
         <button
-          className="filter-btn"
+          className=" bg-black-200 text-white p-2 m-2 rounded"
           onClick={() => {
             const filteredList = listOfRestaurants.filter(
               (res) => res.info.avgRating > 4
@@ -64,7 +64,7 @@ if(listOfRestaurants.length === 0){  //conditional rendering
         </button>
       </div>
 
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {listOfRestaurants.map((restaurant,index) => (
           <RestaurantCard
             key={index}

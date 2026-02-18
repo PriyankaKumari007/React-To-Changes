@@ -6,7 +6,7 @@ const RestaurantCard = ({ resData }) => {
     resData?.info || {};
 
   return (
-    <div className="res-card">
+    <div className="flex flex-col m-4 p-4 w-72 bg-pink-50 shadow-lg">
       <img
         className="res-logo"
         src={CDN_URL + cloudinaryImageId}
