@@ -73,14 +73,15 @@ const Body = () => {
       <div className="flex flex-wrap">
         {
         listOfRestaurants.map((restaurant, index) => (
-          <Link key={index} to={"/restaurant/" + restaurant.cta.link}>
-          { 
-            restaurant.info.isOpen ? (
-          <PromotedRestaurantCard key={index} resData={restaurant} />
-        ) : ( 
-          <RestaurantCard key={index} resData={restaurant} />
-        ) }
-        </Link>
+          <Link key={index} to={"/city/123"}>
+            { 
+              restaurant.info.isOpen ? (
+                <PromotedRestaurantCard key={index} resData={restaurant} />
+              ) : ( 
+                <RestaurantCard key={index} resData={restaurant} />
+              )
+            }
+          </Link>
 
         ))}
       </div>

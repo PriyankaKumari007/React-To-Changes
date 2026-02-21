@@ -8,6 +8,7 @@ import Error from "./components/Error";
 import Contact from "./components/Contact";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 /*
  * Header
@@ -51,6 +52,9 @@ const aapRoutes = createBrowserRouter([
     
             {
         path:"/contact", element:<Contact />
+      },
+      {
+        path:"/city/:resId", element:<RestaurantMenu />
       }
     ]
   },
